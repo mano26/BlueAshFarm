@@ -1,0 +1,153 @@
+ <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Blue Ash Farm</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Store <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Honey</a></li>
+                    <li><a href="#">Syrup</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag 'BlueAshFarm.png'%>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Welcom to Blue Ash Farm</h1>
+              <p class="lead">Blue Ash Farm is about family, friends, the outdoors, hunting, fishing, nature and bees. Harvest, forage, cook and dine! Argyle, WI and Deer Park, IL</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag 'farmerBill.jpg'%>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Bill O'donnell -Owner</h1>
+              <p class="lead">Thanks for coming by to check out my farm!</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag 'BAF-night.jpg'%>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Nighttime at the farm...</h1>
+              <p class="lead"></p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <%= image_tag 'bees.jpg', :class => "img-circle", :data =>"holder.js/140x140", :size => '140x140'%>
+          <h2>Honey!!</h2>
+          <p>I reversed my bee hive brood boxes and made a new stand to hold 4 hives. Going split the hives in early May. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <%= image_tag 'goose.jpg', :class => "img-circle", :data =>"holder.js/140x140", :size => '140x140'%>
+          <h2>Heading</h2>
+          <p>Mother Goose was not happy I was in the wetland. But it gave me a chance to take a pic of her nest and 4 eggs. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <%= image_tag 'sap.jpg', :class => "img-circle", :data =>"holder.js/140x140", :size => '140x140'%>
+          <h2>Heading</h2>
+          <p>My maple sap was running while I was gone. The tap hole has drenched the side of my maple tree. All that lost sap. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+<%= link_to 'New Blog post', new_blog_post_path %>

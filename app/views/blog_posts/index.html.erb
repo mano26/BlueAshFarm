@@ -113,41 +113,28 @@
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider">
+      <% @blog_posts.each do |bp| %>
 
       <div class="featurette">
         <%= image_tag 'honey.jpg', :class=> "featurette-image pull-right" %>
-        <h2 class="featurette-heading">Wednesday,April 10, 2013...<span class="muted">Hi Honey!</span></h2>
-        <p class="lead">I reversed my bee hive brood boxes and made a new stand to hold 4 hives. Going split the hives in early May. .</p>
+        <h2 class="featurette-heading">Wednesday,April 10, 2013...<span class="muted"><%= bp.title %></span></h2>
+        <p class="lead"><%= bp.text %></p>
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
+      <%end%>
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2013 BlueAshFarm, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
-    </div><!-- /.container -->
+    </div>
+
+    
 
 
-<%= link_to 'New Blog post', new_blog_post_path %>
+
+
